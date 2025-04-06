@@ -130,6 +130,10 @@ To use the MCP server mode, add it to your MCP client's configuration file (e.g.
     ```
     This starts the server with the Node.js inspector attached and provides a URL to connect debugging tools (like Chrome DevTools).
 
+## Acknowledgments
+
+This project was significantly developed with the assistance of AI, primarily using Google's Gemini 2.5 Pro model accessed via the Roo Code extension for Visual Studio Code.
+
 ## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
