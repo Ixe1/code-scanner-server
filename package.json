@@ -1,0 +1,43 @@
+{
+  "name": "code-scanner-server",
+  "version": "0.1.0",
+  "description": "A CLI tool and MCP server that scans code files for definitions (classes, functions, etc.), respects .gitignore, provides line numbers, and outputs LLM-friendly formats (XML/Markdown).",
+  "author": "Ixe1",
+  "type": "module",
+  "bin": {
+    "code-scanner-server": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.27.0",
+    "@modelcontextprotocol/sdk": "0.6.0",
+    "@types/babel__parser": "^7.0.0",
+    "@types/find-up": "^2.1.1",
+    "fast-glob": "^3.3.3",
+    "find-up": "^7.0.0",
+    "ignore": "^7.0.3",
+    "minimatch": "^9.0.5",
+    "tree-sitter": "^0.22.4",
+    "tree-sitter-c-sharp": "^0.23.1",
+    "tree-sitter-css": "^0.23.2",
+    "tree-sitter-javascript": "^0.23.1",
+    "tree-sitter-php": "^0.23.12",
+    "tree-sitter-python": "^0.23.6",
+    "tree-sitter-typescript": "^0.23.2",
+    "xmlbuilder2": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/yargs": "^17.0.33",
+    "typescript": "^5.3.3",
+    "yargs": "^17.7.2"
+  }
+}
