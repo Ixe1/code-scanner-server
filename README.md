@@ -1,5 +1,9 @@
 [![MseeP.ai Security Assessment Badge](https://mseep.net/pr/ixe1-code-scanner-server-badge.png)](https://mseep.ai/app/ixe1-code-scanner-server)
 
+<a href="https://glama.ai/mcp/servers/@Ixe1/code-scanner-server">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@Ixe1/code-scanner-server/badge" alt="Code Scanner Server MCP server" />
+</a>
+
 # `code-scanner-server`
 
 > A CLI tool and MCP server that scans code files for definitions (classes, functions, etc.), respects .gitignore, provides line numbers, and outputs LLM-friendly formats (XML/Markdown).
